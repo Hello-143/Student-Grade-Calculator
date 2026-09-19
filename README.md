@@ -1,16 +1,17 @@
-#  Student Grade Calculator
+# Student Grade Calculator
 
-# 1  Problem Statement
+This project is developed as part of Practice Lab 7 on Extreme Programming (XP).
 
-The Student Grade Calculator accepts marks for multiple subjects and calculates the total marks and percentage. Further increments will add grade calculation, pass/fail status, input validation, and result summary.
+# 1 Problem Statement
 
-# 2 Agile Methodology
+The system takes marks of five subjects as input, calculates total marks and percentage, assigns a grade (A/B/C/D/F), determines pass/fail status, and validates the input.
 
-This project demonstrates Extreme Programming (XP) practices:
+# 2 XP Practices Used
 
-1 Pair Programming using Driver-Navigator approach
-2 Incremental and iterative development
-2 Git version control
-3 Feature branches
-4 Pull Requests
-5 Code review
+- Pair Programming (simulated Driver-Navigator roles)
+- Driver-Navigator Approach
+- Incremental Development
+- Git and GitHub Collaboration
+- Feature Branches
+- Pull Requests
+- Code Review (self-review)
