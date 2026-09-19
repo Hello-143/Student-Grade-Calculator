@@ -1,4 +1,4 @@
-# XP Lab 7 - Student Grade Calculator
+#  Student Grade Calculator
 
 # 1  Problem Statement
 
