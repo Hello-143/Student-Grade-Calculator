@@ -10,4 +10,4 @@ total = marks1 + marks2 + marks3 + marks4 + marks5
 percentage = total / 5
 
 print("\nTotal Marks:", total)
-print("Percentage:", percentage, "%")
+print("Percentage:", round(percentage, 2), "%")
