@@ -1,16 +1,23 @@
 print("Student Grade Calculator")
 
-marks1 = float(input("Enter marks for Subject 1: "))
-marks2 = float(input("Enter marks for Subject 2: "))
-marks3 = float(input("Enter marks for Subject 3: "))
-marks4 = float(input("Enter marks for Subject 4: "))
-marks5 = float(input("Enter marks for Subject 5: "))
+marks = []
 
-total = marks1 + marks2 + marks3 + marks4 + marks5
+for i in range(1, 6):
+    while True:
+        try:
+            mark = float(input(f"Enter marks for Subject {i}: "))
+
+            if 0 <= mark <= 100:
+                marks.append(mark)
+                break
+            else:
+                print("Marks must be between 0 and 100.")
+
+        except ValueError:
+            print("Please enter a valid number.")
+
+total = sum(marks)
 percentage = total / 5
-
-print("\nTotal Marks:", total)
-print("Percentage:", round(percentage, 2), "%")
 
 if percentage >= 90:
     grade = "A"
@@ -28,5 +35,8 @@ if percentage >= 40:
 else:
     status = "FAIL"
 
+print("\n----- Result Summary -----")
+print("Total Marks:", total)
+print("Percentage:", round(percentage, 2), "%")
 print("Grade:", grade)
 print("Status:", status)
